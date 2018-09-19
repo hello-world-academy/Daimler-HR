@@ -22,7 +22,7 @@ function getDealers() {
 
 function addDealer(dealer) {
   var contact = dealer["communicationChannels"];
-  console.log(contact);
+  console.log(contact); 
   
   var html = '<div class="card mb-1">' +
              '<div class="card-body">' +
@@ -33,6 +33,7 @@ function addDealer(dealer) {
              '</div>';
   
   $("#dealers").append(html);
+  // done
 }
 
 
