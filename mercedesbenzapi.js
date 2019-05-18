@@ -3,7 +3,7 @@ function getDealers() {
   
   var city = $('#inputCity').val();
   var url = "https://cors-anywhere.herokuapp.com/https://api.mercedes-benz.com/dealer/v1/dealers?" +
-            "apikey=1ff38966-c327-40e8-a3b5-876ab46b6fba" +
+            "apikey=" + 
             "&pageSize=3" +
             "&countryIsoCode=DE" +
             "&city=" + city;
