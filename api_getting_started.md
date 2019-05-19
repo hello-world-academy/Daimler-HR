@@ -3,7 +3,7 @@ Sie brauchen
 
 * einen Computer (Windows, macOS, oder Linux). 
 * Zugang zum Internet
-* einen Texteditor, um Code zu schreiben, wie z.B. [Visual Studio Code](https://code.visualstudio.com/), [Notepad++](https://notepad-plus-plus.org/), [Sublime Text](https://www.sublimetext.com/), [Atom](https://atom.io/), etc. Von klassischen Textverarbeitungsprogramme wie MS-Office oder Pages ist abzuraten. Sie haben auch die Möglichkeit auf Online-Lösungen zurückzugreifen wie z.B. [https://www.editpad.org/](https://www.editpad.org/).
+* einen Texteditor, wie z.B. [Visual Studio Code](https://code.visualstudio.com/), [Notepad++](https://notepad-plus-plus.org/), [Sublime Text](https://www.sublimetext.com/), [Atom](https://atom.io/), etc. Von klassischen Textverarbeitungsprogramme wie MS-Office oder Pages ist abzuraten. Sie haben auch die Möglichkeit auf Online-Lösungen zurückzugreifen wie z.B. [https://www.editpad.org/](https://www.editpad.org/).
 * einen Webbrowser. Aktuelle weit verbreitete Browser sind u.a. [Firefox](https://www.mozilla.org/en-US/firefox/new/), [Chrome](https://www.google.com/chrome/browser/), [Safari](https://www.apple.com/safari/), [Internet Explorer](http://windows.microsoft.com/en-us/internet-explorer/download-ie), and [Microsoft Edge](https://www.microsoft.com/en-us/windows/microsoft-edge). 
 
 
