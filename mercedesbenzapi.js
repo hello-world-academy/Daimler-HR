@@ -13,8 +13,7 @@ function getDealers() {
       addDealer(dealer);
     });
   })
-
-  $.fail(function(jqXHR, textStatus, errorThrown) {
+  .fail(function(jqXHR, textStatus, errorThrown) {
     console.log("error " + textStatus);
     console.log("incoming Text " + jqXHR.responseText);
   }); 
