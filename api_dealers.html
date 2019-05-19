@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Digital HR Skills and Coding</title>
+  </head>
+  <body>
+    <div class="card mb-3">
+        <div class="card-body">
+          <h1 class="h3 mb-3 font-weight-normal">Händler Suche</h1>
+      
+          <form id="dealerForm" onSubmit="return getDealers()">  
+            <input type="text" id="inputCity" class="form-control mb-1" placeholder="Stadt" required="" autofocus="">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Suchen</button>  
+          </form>
+        </div>
+      </div>
+      
+      <div id="dealers">
+      </div>
+
+    <script>
+      function getDealers() {
+        $('#dealers').empty();
+        
+        var city = $('#inputCity').val();
+        var url = "https://cors-anywhere.herokuapp.com/https://api.mercedes-benz.com/dealer/v1/dealers?" +
+                  "apikey=" + 
+                  "&pageSize=3" +
+                  "&countryIsoCode=DE" +
+                  "&city=" + city;
+        
+        $.getJSON(url, function( data ){    
+          $.each(data["dealers"], function(index, dealer){
+            addDealer(dealer);
+          });
+        })
+      
+        $.fail(function(jqXHR, textStatus, errorThrown) {
+          console.log("error " + textStatus);
+          console.log("incoming Text " + jqXHR.responseText);
+        }); 
+      }
+      
+      
+      function addDealer(dealer) {
+        var contact = dealer["communicationChannels"];
+        console.log(contact);
+        
+        var html = '<div class="card mb-1">' +
+                   '<div class="card-body">' +
+                   '<h5 class="card-title">' + dealer['legalName'] + '</h5>' +
+                   '<p class="card-text"><a href=tel:" ' + contact['phone'] + '"">' + contact['phone'] + '</a></p>' +
+                   '<a href="' + contact['website'] + '" target="_blank" class="card-link">' + contact['website'] +'</a>' +
+                   '</div>' +
+                   '</div>';
+        
+        $("#dealers").append(html);
+      };
+      
+      
+      function addDealer(dealer) {
+        var contact = dealer["communicationChannels"];
+        console.log(contact); 
+        
+        var html = '<div class="card mb-1">' +
+                   '<div class="card-body">' +
+                   '<h5 class="card-title">' + dealer['legalName'] + '</h5>' +
+                   '<p class="card-text"><a href=tel:" ' + contact['phone'] + '"">' + contact['phone'] + '</a></p>' +
+                   '<a href="' + contact['website'] + '" target="_blank" class="card-link">' + contact['website'] +'</a>' +
+                   '</div>' +
+                   '</div>';
+        
+        $("#dealers").append(html);
+        // done
+      }
+      
+      $( document ).ready(function() {
+        console.log("reload");
+        
+        $("#dealerForm").submit(function(event) {
+          event.preventDefault();
+        });
+      });
+    </script>
+
+  </body>
+</html>
