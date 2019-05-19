@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Digital HR Skills and Coding</title>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+ </script>
   </head>
   <body>
     <div class="card mb-3">
@@ -25,7 +30,7 @@
         
         var city = $('#inputCity').val();
         var url = "https://cors-anywhere.herokuapp.com/https://api.mercedes-benz.com/dealer/v1/dealers?" +
-                  "apikey=" + 
+                  "apikey=f09c79fb-ff80-4b24-8d6a-dcb9f239fbfc" + 
                   "&pageSize=3" +
                   "&countryIsoCode=DE" +
                   "&city=" + city;
@@ -34,7 +39,7 @@
           $.each(data["dealers"], function(index, dealer){
             addDealer(dealer);
           });
-        })
+        });
       
         $.fail(function(jqXHR, textStatus, errorThrown) {
           console.log("error " + textStatus);
