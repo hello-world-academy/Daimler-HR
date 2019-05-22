@@ -1,10 +1,10 @@
 
 Sie brauchen 
 
-* einen Computer (Windows, macOS, oder Linux). 
+* einen Computer (Windows, macOS oder Linux) 
 * Zugang zum Internet
-* einen Texteditor, wie z.B. [Visual Studio Code](https://code.visualstudio.com/), [Notepad++](https://notepad-plus-plus.org/), [Sublime Text](https://www.sublimetext.com/), [Atom](https://atom.io/), etc. Von klassischen Textverarbeitungsprogramme wie MS-Office oder Pages ist abzuraten. Sie haben auch die Möglichkeit auf Online-Lösungen zurückzugreifen wie z.B. [https://www.editpad.org/](https://www.editpad.org/).
-* einen Webbrowser. Aktuelle weit verbreitete Browser sind u.a. [Firefox](https://www.mozilla.org/en-US/firefox/new/), [Chrome](https://www.google.com/chrome/browser/), [Safari](https://www.apple.com/safari/), [Internet Explorer](http://windows.microsoft.com/en-us/internet-explorer/download-ie), and [Microsoft Edge](https://www.microsoft.com/en-us/windows/microsoft-edge). 
+* einen Texteditor, wie z.B. [Visual Studio Code](https://code.visualstudio.com/), [Notepad++](https://notepad-plus-plus.org/), [Sublime Text](https://www.sublimetext.com/), [Atom](https://atom.io/) etc. Von klassischen Textverarbeitungsprogramme wie MS-Office oder Pages ist abzuraten. Sie haben auch die Möglichkeit, auf Online-Lösungen zurückzugreifen wie z.B. [https://www.editpad.org/](https://www.editpad.org/).
+* einen Webbrowser. Aktuelle weit verbreitete Browser sind u.a. [Firefox](https://www.mozilla.org/en-US/firefox/new/), [Chrome](https://www.google.com/chrome/browser/), [Safari](https://www.apple.com/safari/), [Internet Explorer](http://windows.microsoft.com/en-us/internet-explorer/download-ie) und [Microsoft Edge](https://www.microsoft.com/en-us/windows/microsoft-edge)
 
 
 # Mercedes-Benz für Developers
@@ -13,16 +13,16 @@ Mercedes Benz stellt für Kunden und Entwickler eine Plattform ([/developers](ht
 
 ## APIs
 
-Eine Reihe von APIs werden von Seiten von  Mercedes-Benz zur Verfügung gestellt. Um eine Übersicht zu den APIs zu bekommen folgen Sie bitte diesem [link](https://developer.mercedes-benz.com/apis).
+Eine Reihe von APIs werden uns von Mercedes-Benz zur Verfügung gestellt. Um eine Übersicht zu diesen APIs zu bekommen, folgen Sie bitte diesem [link](https://developer.mercedes-benz.com/apis).
 
-Eine Voraussetzung um die APIs nutzen zu können ist die Erstellung eines [developer accounts](). Dadurch erhalten sie einen `API-key` den Sie zur Identifikation bereitstellen müssen. (_Für dieses Tutorial erhalten Sie ein en API-key von ihrem Trainer._)  
+Eine Voraussetzung für die Nutzung dieser APIs ist die Erstellung eines [developer accounts](). Dadurch erhalten sie einen `API-key` , den Sie zur Identifikation bereitstellen müssen. (_Für dieses Tutorial erhalten Sie ein en API-key von ihrem Trainer._)  
 
 
 ## Dealers API
 
-Im folgenden beschäftigen wir uns näher mit der [`dealers-api`](https://developer.mercedes-benz.com/apis/dealer_api).
+Im Folgenden beschäftigen wir uns näher mit der [`dealers-api`](https://developer.mercedes-benz.com/apis/dealer_api).
 
-Dieses Service dient dazu, sich über Händler und Servicepartner zu informieren.
+Dieser Service dient der Information über Händler und Servicepartner.
 Folgende Funktionen sind implementiert:
 
 * Geolokalisierungsdaten
@@ -32,22 +32,22 @@ Folgende Funktionen sind implementiert:
 
 ### Verwendung der Dealers API
 
-Der Endpunkt der API lautet `https://api.mercedes-benz.com/dealer/v1`. Wir jede andere URL können Sie diese in die Adresszeile ihres Browsers eingeben.
+Der Endpunkt der API lautet `https://api.mercedes-benz.com/dealer/v1`. Wie auch jede andere URL können Sie diese in die Adresszeile ihres Browsers eingeben.
 
 > __Aufgabe:__ Geben Sie den oben genannten Endpunkt in die Adresszeile ihres Browsers ein. 
 > * Was ist passiert?
-> * Was müssen wir tun um das Problem zu beheben?
+> * Was müssen wir tun, um das Problem zu beheben?
 
 
 #### Der `API-key`
 
 Sie finden den API-key für das Tutorial [hier](https://etherpad.hello-world.academy/p/daimler_hr).
 
-> __Aufgabe:__ Geben Sie den oben genannten Endpunkt zusamen mit der API-key in die Adresszeile ihres Browsers ein.    
+> __Aufgabe:__ Geben Sie den oben genannten Endpunkt zusammen mit der API-key in die Adresszeile Ihres Browsers ein.    
 `https://api.mercedes-benz.com/dealer/v1/dealers?apikey=<insert_your_api_key_here>`
 > * Was ist passiert?
 
-Sie erhalten eine textbasierte Antwort, die etwas lesbarer formatiert, wie folgt aussieht:
+Sie erhalten eine textbasierte Antwort, die - etwas lesbarer formatiert - wie folgt aussieht:
 
 
 ```
@@ -195,7 +195,7 @@ Sie erhalten eine textbasierte Antwort, die etwas lesbarer formatiert, wie folgt
 
 ***
 
-_Anmerkung: Grundsätzlich können sie diese Anfragen auch über das Kommandozeilentool [`curl`](https://de.wikipedia.org/wiki/CURL) absenden._
+_Anmerkung: Grundsätzlich können Sie diese Anfragen auch über das Kommandozeilentool [`curl`](https://de.wikipedia.org/wiki/CURL) absenden._
 
 `curl -X GET "https://api.mercedes-benz.com/dealer/v1/dealers?apikey=<insert_your_api_key_here>"  -H "accept: application/json"` 
 ***
@@ -225,8 +225,9 @@ Es besteht die Möglichkeit, Händler nach Eigenschaften zu filtern. Hierzu dien
 
 ### Anzahl der angezeigten Funde
 
-Die Antwort kann auf eine bestimmte Anzahl von Einträgen beschränkt werden inden der Parameter `pageSize` spezifiziert wird. Der Standardwert von `pageSize` ist 50.
+Die Antwort kann auf eine bestimmte Anzahl von Einträgen beschränkt werden indem der Parameter `pageSize` spezifiziert wird. Der Standardwert von `pageSize` ist 50.
 
 
 ***
+
 
