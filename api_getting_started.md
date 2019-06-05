@@ -15,7 +15,7 @@ Mercedes Benz stellt für Kunden und Entwickler eine Plattform ([/developers](ht
 
 Eine Reihe von APIs werden uns von Mercedes-Benz zur Verfügung gestellt. Um eine Übersicht zu diesen APIs zu bekommen, folgen Sie bitte diesem [link](https://developer.mercedes-benz.com/apis).
 
-Eine Voraussetzung für die Nutzung dieser APIs ist die Erstellung eines [developer accounts](). Dadurch erhalten sie einen `API-key` , den Sie zur Identifikation bereitstellen müssen. (_Für dieses Tutorial erhalten Sie ein en API-key von ihrem Trainer._)  
+Eine Voraussetzung für die Nutzung dieser APIs ist die Erstellung eines _developer accounts_. Dadurch erhalten sie einen `API-key` , den Sie zur Identifikation bereitstellen müssen. (_Für dieses Tutorial erhalten Sie ein en API-key von ihrem Trainer._)  
 
 
 ## Dealers API
